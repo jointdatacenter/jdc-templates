@@ -4,12 +4,17 @@ version: 1.0.0
 quarto-required: ">=1.5.0"
 resources:
   - background.png
+  - jdc_logo_horizontal_blue.png
+  - jdc_logo_horizontal_white.png
 contributes:
   formats:
     revealjs:
       # Theme integrates with Quarto brand system
       theme: [default, revealjs.scss]
-      logo: jdc_logo_horizontal_white.png
+      include-in-header:
+        - logo-switch.css
+      include-after-body:
+        - logo-footer.html
       # Title slide background - will be overridden by brand colors
       title-slide-attributes:
         data-background-color: "#0072bc"  # Fallback for JDC blue

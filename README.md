@@ -168,6 +168,3 @@ embed-resources: true
 - [Quarto HTML Documents](https://quarto.org/docs/output-formats/html-basics.html)
 - [Quarto PDF Documents](https://quarto.org/docs/output-formats/pdf-basics.html)
 
-## Support
-
-For questions or issues with this template, contact the JDC technical team or visit [Joint Data Center](https://www.jointdatacenter.org/).
