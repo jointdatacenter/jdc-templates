@@ -11,10 +11,10 @@ contributes:
     revealjs:
       # Theme integrates with Quarto brand system
       theme: [default, revealjs.scss]
-      include-in-header:
-        - logo-switch.css
-      include-after-body:
-        - logo-footer.html
+      # include-in-header:
+      #   - logo-switch.css
+      # include-after-body:
+      #   - logo-footer.html
       # Title slide background - will be overridden by brand colors
       title-slide-attributes:
         data-background-color: "#0072bc"  # Fallback for JDC blue

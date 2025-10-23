@@ -3,6 +3,7 @@ title: JDC Quarto Theme
 subtitle: For Quarto/Revealjs
 format: jdc-revealjs
 embed-resources: true
+logo: _extensions/jdc/jdc_logo_horizontal_white.png
 ---
 
 ## Presentation with Quarto
@@ -14,10 +15,9 @@ embed-resources: true
 
 To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
 
-## Your Slide Title {.jdc-background}
+## Your Slide Title {.slide-blue .jdc-background}
 
-
-Your content here
+Blue slide with custom background
 
 
 ## Presentation title
