@@ -1,0 +1,165 @@
+/*-- scss:defaults --*/
+
+// Layout settings
+$border-radius: 0 !default;
+$presentation-h1-font-size: 2.2em !default;
+
+/*-- scss:rules --*/
+
+// Logo sizing
+.reveal img.slide-logo {
+  max-height: 3rem;
+}
+
+// Footer styling
+.reveal .footer {
+  border-top: lighten($brand-dark, 70) solid 2px;
+  height: 3.5rem;
+
+  p {
+    margin-top: 12px;
+  }
+}
+
+.has-dark-background {
+  .footer {
+    border-top-color: $brand-light;
+    color: $brand-light;
+  }
+}
+
+// Hamburger menu for dark backgrounds
+.has-dark-background {
+  .slide-menu-button {
+    .fa-bars::before {
+      background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="rgb(230, 230, 230)" class="bi bi-list" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>')
+    }
+  }
+}
+
+// Title slide styling
+#title-slide {
+  color: $brand-yellow;
+
+  .subtitle {
+    font-size: 1.3em;
+  }
+}
+
+// Section slides
+.reveal .title-slide {
+  text-align: center;
+}
+
+.has-dark-background .title-slide {
+  p {
+    color: $brand-yellow;
+  }
+}
+
+// Typography and content styling
+.reveal .slide {
+
+  // Link hover effects
+  a:hover {
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.12rem;
+    text-underline-offset: 0.2rem;
+  }
+
+  // List markers in brand blue
+  ul li::marker,
+  ol li::marker {
+    color: $brand-blue;
+  }
+
+  // Blockquotes
+  blockquote {
+    color: $brand-dark;
+    font-style: italic;
+    border-left-color: $brand-blue;
+  }
+
+  // Code block spacing
+  div.sourceCode {
+    margin-bottom: 12px !important;
+  }
+}
+
+// Dark background overrides
+.has-dark-background .slide {
+
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: $brand-yellow;
+  }
+
+  // List markers in yellow for dark backgrounds
+  ul li::marker,
+  ol li::marker {
+    color: $brand-yellow;
+  }
+
+  // Blockquotes for dark backgrounds
+  blockquote {
+    color: $brand-light;
+    border-left-color: $brand-yellow;
+  }
+
+  // Callout titles
+  .callout-title p {
+    color: $brand-dark;
+  }
+}
+
+// JDC brand helper classes
+// Text color utilities
+.text-blue {
+  color: $brand-blue;
+}
+
+.text-yellow {
+  color: $brand-yellow;
+}
+
+.text-grey {
+  color: $brand-grey;
+}
+
+// Background color utilities
+.bg-blue,
+.bg-yellow,
+.bg-grey {
+  padding: 0.05em 0.1em;
+  display: inline-block;
+  color: $brand-dark;
+}
+
+.bg-blue {
+  background-color: lighten($brand-blue, 45%);
+}
+
+.bg-yellow {
+  background-color: lighten($brand-yellow, 30%);
+}
+
+.bg-grey {
+  background-color: lighten($brand-grey, 45%);
+}
+
+// Slide background color utility
+.slide-blue {
+  background-color: $brand-blue !important;
+}
+
+// Slide with background image
+.jdc-background .slide-background-content {
+  background-image: url('../../../../../_extensions/jdc/background.png') !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  opacity: 0.15 !important;
+}

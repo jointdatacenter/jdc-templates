@@ -1,0 +1,58 @@
+# JDC (Joint Data Center) Brand Configuration
+# This file defines the visual identity for JDC Quarto documents
+
+color:
+  # Core brand palette based on JDC/UNHCR colors
+  palette:
+    # Primary brand colors
+    blue: "#0072bc"
+    navy: "#18375f"
+    green: "#00b398"
+    red: "#ef4a60"
+    yellow: "#faeb00"
+
+    # Neutral colors
+    grey: "#666666"
+    dark: "#222222"
+    light: "#ffffff"
+
+    # Light variations for backgrounds
+    blue-light: "#ddeaf1"
+    grey-light: "#f5f5f5"
+
+  # Semantic color assignments
+  primary: blue
+  secondary: navy
+  success: green
+  warning: yellow
+  danger: red
+
+  # Document structure colors
+  foreground: dark
+  background: light
+
+  # Interactive elements
+  link: blue
+
+logo:
+  # Primary JDC horizontal logo
+  medium: "_extensions/jdc/jdc_logo_horizontal.svg"
+  # Alternative JDC logo
+  small: "_extensions/jdc/jdc_logo_horizontal_white.png"
+
+typography:
+  # Google Fonts integration
+  fonts:
+    - family: "Lato"
+      source: google
+      weight: [300, 400, 700]
+      style: [normal, italic]
+    - family: "Source Code Pro"
+      source: google
+      weight: [300, 400, 600]
+      style: [normal, italic]
+
+  # Typography hierarchy
+  base: "Lato"
+  headings: "Lato"
+  monospace: "Source Code Pro"

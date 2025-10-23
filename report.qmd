@@ -1,0 +1,186 @@
+---
+title: JDC Report Template
+subtitle: Using JDC Brand Settings
+author: Your Name
+date: today
+format:
+  jdc-html:
+    embed-resources: true
+  pdf:
+    toc: true
+    number-sections: true
+    colorlinks: true
+---
+
+## Introduction
+
+This is a template for creating reports using the JDC (Joint Data Center) brand settings. The template integrates seamlessly with Quarto's document system and applies consistent JDC branding throughout.
+
+To learn more about Quarto documents, see <https://quarto.org/docs/>.
+
+## Document Structure
+
+### YAML Header
+
+The YAML header defines the content and formatting of your report:
+
+
+### Sections and Subsections
+
+- Level 1 headings (`#`) create main sections
+- Level 2 headings (`##`) create subsections
+- Level 3 headings (`###`) create sub-subsections
+
+The table of contents automatically generates from your heading structure.
+
+## Content Elements
+
+### Lists
+
+Unordered lists use bullet points:
+
+- Item 1
+  - Sub-item 1.1
+  - Sub-item 1.2
+- Item 2
+- Item 3
+
+Ordered lists use numbers:
+
+1. First step
+2. Second step
+3. Third step
+
+### Text Formatting
+
+You can use **bold text**, *italic text*, or ***bold italic text***.
+
+Use `inline code` for technical terms or code snippets.
+
+### Links
+
+Include [links to external resources](https://www.jointdatacenter.org/) throughout your document.
+
+### Blockquotes
+
+> This is a blockquote. Use it for important notes, citations, or highlighted information.
+
+## Code and Analysis
+
+### Code Blocks
+
+Include code blocks with syntax highlighting:
+
+```python
+def calculate_statistics(data):
+    """Calculate basic statistics from data."""
+    return {
+        'mean': sum(data) / len(data),
+        'min': min(data),
+        'max': max(data)
+    }
+```
+
+## Data Presentation
+
+### Tables
+
+| Country | Population | GDP (Billion USD) |
+|---------|------------|-------------------|
+| Country A | 50M | 250 |
+| Country B | 30M | 180 |
+| Country C | 80M | 420 |
+
+### Figures
+
+You can include images using Markdown syntax:
+
+```markdown
+![Caption for your figure](path/to/image.jpg)
+```
+
+## Callouts
+
+Quarto supports different types of callouts for highlighting information:
+
+::: {.callout-note}
+## Note
+This is a note callout. Use it for general information.
+:::
+
+::: {.callout-tip}
+## Tip
+This is a tip callout. Use it for helpful suggestions.
+:::
+
+::: {.callout-warning}
+## Warning
+This is a warning callout. Use it for important cautions.
+:::
+
+::: {.callout-important}
+## Important
+This is an important callout. Use it for critical information.
+:::
+
+## Mathematical Expressions
+
+Mathematical expressions are supported in both HTML and PDF output:
+
+Inline equations like $E = mc^2$ can be included directly in text.
+
+Display equations can be written as:
+
+$$
+\bar{x} = \frac{1}{n}\sum_{i=1}^{n}x_i
+$$
+
+## Brand Helper Classes
+
+The JDC template includes helper classes for applying brand colors:
+
+### Text Colors
+
+- Use `{.text-blue}` for [blue text]{.text-blue}
+- Use `{.text-navy}` for [navy text]{.text-navy}
+- Use `{.text-green}` for [green text]{.text-green}
+- Use `{.text-yellow}` for [yellow text]{.text-yellow}
+- Use `{.text-grey}` for [grey text]{.text-grey}
+
+### Background Colors
+
+::: {.bg-blue}
+This content has a light blue background. Use it to highlight key information.
+:::
+
+::: {.bg-green}
+This content has a light green background. Use it for success messages or positive information.
+:::
+
+::: {.bg-yellow}
+This content has a light yellow background. Use it for warnings or important notes.
+:::
+
+## Two-Column Layouts
+
+You can create two-column layouts using div containers:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+### Left Column
+Content for the left column goes here. This could include text, lists, or other elements.
+:::
+
+::: {.column width="50%"}
+### Right Column
+Content for the right column goes here. Useful for comparisons or side-by-side information.
+:::
+
+::::
+
+## Conclusion
+
+This template provides a foundation for creating professional JDC-branded reports. Customize the content while maintaining the consistent brand identity.
+
+For more information about Quarto features and capabilities, visit the [Quarto documentation](https://quarto.org/docs/).

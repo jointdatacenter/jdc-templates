@@ -1,0 +1,198 @@
+---
+title: JDC Quarto Theme
+subtitle: For Quarto/Revealjs
+format: jdc-revealjs
+embed-resources: true
+---
+
+## Presentation with Quarto
+
+- Quarto integrates with Reveal.js to create stunning slideshows.
+- Markdown syntax is used to structure and format content.
+- Craft a finished branded presentation with this template.
+- Seamlessly weave together content and executable code.
+
+To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+
+## Your Slide Title {.jdc-background}
+
+
+Your content here
+
+
+## Presentation title
+
+- YAML arguments define the content of the title slide.
+- Add arguments as needed
+
+```yaml
+
+---
+title: JDC Quarto Theme
+subtitle: For revealjs
+author: Author
+---
+
+```
+# Content
+
+## Section
+
+A section starts with a level 1 heading (`# Section 1`).
+
+For example:
+
+```{.markdown}
+
+## Section example
+
+Some content for section 1
+```
+
+## Slides
+
+- Each slide starts with a level 2 heading (`## Slide 1`). For example:
+
+```{.markdown}
+
+## Slide 1
+
+Some content for slide 1
+
+## Slide 2
+
+Some content for slide 2
+```
+
+
+# Blue section {.slide-blue}
+
+Add `{.slide-blue}` class to make it blue
+
+## Lists
+
+- To add bullet points to a slide, use the Markdown list syntax.
+- Works the same way with numbered lists. For example:
+
+```{.markdown}
+
+- Item 1
+    - Item 1.1
+    - Item 1.2
+- Item 2
+- Item 3
+```
+
+
+
+## Incremental list
+
+- By default the lists are **not** incremental.
+- Add the `{.incremental}` class, so each bullet will appear separately.
+
+```{.markdown}
+
+::: {.incremental}
+- Item 1
+- Item 2
+:::
+```
+
+::: {.incremental}
+- This is the 1<sup>st</sup> incremental bullet.
+- And here the 2<sup>nd</sup>.
+:::
+
+::: {.aside}
+Include `incremental:true` in the YAML to set it globally.
+:::
+
+## Incremental content
+
+- Use `. . .` to separate content and turn it incremental.
+- Any content can be incremental. For example:
+
+```{.markdown}
+
+This will appear first
+
+. . .
+
+And then that!
+```
+
+## Helpers
+
+**Text**
+
+- Use `{.text-blue}` to apply [blue]{.text-blue} color
+- Use `{.text-grey}` for [lighter text]{.text-grey} color
+
+**Background**
+
+- Use `{.bg-blue}` for [light blue]{.bg-blue} background
+- Use `{.bg-grey}` for [light grey]{.bg-grey} background
+
+::: {.aside}
+
+For dark background slides use `{.text-yellow}` and `{.bg-yellow}` classes
+
+:::
+
+## Columns
+
+- To create columns, use a `div` container with class `{.columns}`, containing two or more `div` containers with class `{.column}` and a `width` attribute. For example:
+
+```{.markdown}
+#| echo: true
+
+:::: {.columns}
+
+::: {.column width="40%"}
+Left column
+:::
+
+::: {.column width="60%"}
+Right column
+:::
+
+::::
+```
+
+## Images
+
+- To insert an image, use the Markdown image syntax. For example:
+
+```{.markdown}
+#| echo: true
+![](path/to/image.jpg)
+```
+
+![](https://www.jointdatacenter.org/wp-content/uploads/2025/02/RF1359773_20240620_ssd_HC-at-Jamjang-46-scaled.jpg)
+
+## Speaker Notes:
+
+- You can add speaker notes to your slides that are only visible to the presenter during the presentation.
+- To add speaker notes, use the following syntax:
+
+```{.markdown}
+#| echo: true
+
+## Slide with speaker notes
+
+Slide content
+
+::: {.notes}
+Speaker notes go here.
+:::
+
+```
+
+## More information
+
+You can learn more about controlling the appearance and layout of RevealJS output here: <https://quarto.org/docs/presentations/revealjs/>
+
+# Thank you {.slide-blue}
+
+Enjoy the template!
+

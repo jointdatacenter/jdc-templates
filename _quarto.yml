@@ -1,0 +1,19 @@
+execute:
+  freeze: auto
+
+project:
+  type: default
+
+# Enable brand integration across the project
+brand: "_brand.yml"
+
+# Default format configurations
+# Each .qmd file can override these settings
+format:
+  jdc-revealjs:
+    embed-resources: true
+  jdc-html:
+    embed-resources: true
+  pdf:
+    toc: true
+    number-sections: true
